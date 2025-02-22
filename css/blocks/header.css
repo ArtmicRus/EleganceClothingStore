@@ -1,0 +1,49 @@
+/* HEADER */
+
+.header {
+
+}
+
+.header__row{
+    /* Объявление родителем */
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__content{
+    /* Положение относительно родителя в header__row */
+    position: absolute;
+
+    /* left top лучше держать рядом с position: absolute так как они связаны */
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    width: 670px;
+}
+
+.header__title{
+    margin: 0;
+    /* serif - если не загрузится = грузи то что есть */
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 96px;
+    margin-bottom: 20px;
+}
+
+.header__text{
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.header__btn{
+
+}
+
+.header__photo{
+
+}

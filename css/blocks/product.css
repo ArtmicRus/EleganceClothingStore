@@ -1,0 +1,69 @@
+/* CARDS PRODUCTS */
+
+.products-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /* Говорит display: flex; какой делать отступ между рядами*/
+    row-gap: 40px;
+    padding-bottom: 40px;
+}
+
+.product{
+    text-align: center;
+    max-width: 270px;
+}
+
+.product-link{
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity .2s ease-in;
+}
+
+.product-link:hover{
+    opacity: 0.8;
+}
+
+.product__image{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.product__title{
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    /*text-align: center;*/
+    color: #000000;
+}
+
+.product__price{
+    /*text-align: center;*/
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.product__price-old{
+    margin-right: 10px;
+    /*font-size: 14px;*/
+    /*line-height: 19px;*/
+    /*text-transform: uppercase;*/
+
+    color: #999999;
+}
+
+.product__price-new{
+    font-weight: bold;
+    /*font-size: 14px;*/
+    /*line-height: 19px;*/
+    /*text-transform: uppercase;*/
+
+    color: #F72464;
+
+}

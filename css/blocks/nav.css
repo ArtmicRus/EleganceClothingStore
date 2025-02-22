@@ -1,0 +1,87 @@
+/* NAVIGATION */
+
+.nav{
+    padding: 40px 0;
+}
+
+.nav__row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav__logo, a.nav__logo {
+    text-decoration: none;
+    font-family: "Noto Sans", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    color: black;
+    margin-right: 80px;
+}
+
+a.nav__logo:hover{
+    /*text-decoration: underline;*/
+    color:#F72464;
+}
+
+.nav__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item{
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.nav__item:last-child{
+    margin-right: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav__link:hover{
+    color: #F72464;
+}
+
+.nav__cart {
+    margin-left: auto;
+}
+
+.nav__cart-link{
+    top:5px;
+    /* Для того чтобы  номер крепился к корзине */
+    position: relative;
+    display: inline-block;
+    /* По сути увеличивает область клика */
+    padding: 5px;
+}
+
+.nav__cart-number{
+    /* положение номера рядом с корзиной */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #F72464;
+
+    top: -5px;
+    right: -5px;
+
+    border-radius: 50%;
+    color:white;
+
+    font-weight: bold;
+    font-size: 12px;
+
+    line-height: 20px;
+
+    text-align: center;
+}

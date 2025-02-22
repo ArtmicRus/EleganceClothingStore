@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.body{
+    margin: 0;
+    font-family: "Noto Sans", serif;
+}
+
+.container{
+     width: 1170px;
+
+     /* По сути это ЦЕНТРИРОВАНИЕ КОНТЕКНТА */
+     margin: 0 auto;
+ }
+
+.none {
+    display: none;
+}
+
+.section-button-wrapper{
+    text-align: center;
+}
+
+/* Featured products */
+
+.featured-section{
+    /* Что margin что padding - это ОТСТУП
+      ЕСЛИ мы считаем что отступы являются ЧАСТЬЮ СЕКЦИИ для которой мы его делаем то пишем padding
+      ЕСЛИ мы считаем что отступы НЕ являются ЧАСТЬЮ СЕКЦИИ то margin
+      https://www.youtube.com/watch?v=PdN9CbAON0k&t- 14:00 - 15:00
+      */
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+
+.section-new {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-featured{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section-blog{
+    padding-top: 70px;
+    padding-bottom: 45px;
+}
+
+.section-subscribe{
+    padding-top: 45px;
+    padding-bottom: 100px;
+}
