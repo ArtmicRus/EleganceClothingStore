@@ -1,6 +1,7 @@
 @import "./blocks/base.css";
 @import "./blocks/buttons.css";
 
+@import "./blocks/menu-icon.css";
 @import "./blocks/nav.css";
 @import "./blocks/header.css";
 @import "./blocks/section-header.css";
@@ -12,10 +13,27 @@
 
 /*
 
+@media (min-width: 992px) {
+
+}
+
+
   font-family: "Noto Sans", serif;
   font-family: "Playfair Display", serif;
 
 */
+
+/*.nav,*/
+/*header,*/
+/*.section-new,*/
+/*.info-section,*/
+/*.section-featured,*/
+/*.section-blog,*/
+/*.section-subscribe*/
+/*!*footer*!*/
+/*{*/
+/*    display: none;*/
+/*}*/
 
 
 

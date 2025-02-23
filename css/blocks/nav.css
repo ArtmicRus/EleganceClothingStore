@@ -1,7 +1,13 @@
 /* NAVIGATION */
 
 .nav{
-    padding: 40px 0;
+    padding: 20px 0;
+}
+
+@media (min-width: 992px) {
+    .nav {
+        padding: 40px 0;
+    }
 }
 
 .nav__row{
@@ -10,7 +16,9 @@
     align-items: center;
 }
 
-.nav__logo, a.nav__logo {
+a.nav__logo {
+    margin-right: 15px;
+    /*margin-right: 80px;*/
     text-decoration: none;
     font-family: "Noto Sans", serif;
     font-style: normal;
@@ -18,7 +26,12 @@
     font-size: 28px;
     line-height: 38px;
     color: black;
-    margin-right: 80px;
+}
+
+@media (min-width: 992px) {
+    a.nav__logo {
+        margin-right: 83px;
+    }
 }
 
 a.nav__logo:hover{
@@ -26,17 +39,91 @@ a.nav__logo:hover{
     color:#F72464;
 }
 
+.nav__list-holder{
+    display: none;
+    /*opacity: 0;*/
+    transition: opacity 0.2s ease-in;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+    height: 100%;
+    background-color: rgba(247,36,99, 0.5);
+    z-index: 9;
+}
+
+.nav__list-holder--visible{
+    display: block;
+    /*opacity: 1;*/
+}
+
+@media (min-width: 992px) {
+    .nav__list-holder{
+        opacity: 1;
+        position: static;
+        background-color: transparent;
+    }
+}
+
+.nav__list-holder.nav__list{
+    transform: translateX(-100%);
+}
+
+.nav__list-holder--visible .nav__list{
+    transform: translateX(0%);
+}
+
 .nav__list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    background-color: rgb(0,0,0);
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+    color: #fff;
+    z-index: 9;
+
+    transform: translateX(-100%);
+    transition: transform .2s ease-in;
 }
 
+@media (min-width: 992px) {
+    .nav__list{
+        position: static;
+        display: flex;
+        color:black;
+        width: auto;
+        background-color: transparent;
+        transform: none;
+    }
+}
+
+/*.nav__list{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    list-style-type: none;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
 .nav__item{
-    margin-right: 30px;
     font-size: 18px;
+    /*Делает блок с текст ВО ВСЮ доступную ширину*/
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #313131;
+}
+
+@media (min-width: 992px) {
+    .nav__item {
+        padding: 0;
+        margin-right: 30px;
+        border-bottom: none;
+    }
 }
 
 .nav__item:last-child{
@@ -45,7 +132,9 @@ a.nav__logo:hover{
 
 .nav__link {
     text-decoration: none;
-    color: #000;
+    /*Говорит брать цвет у ближайшего вышестоящего элемента (а это nav__list) */
+    color: inherit;
+    /*color: black;*/
 }
 
 .nav__link:hover{
@@ -54,6 +143,13 @@ a.nav__logo:hover{
 
 .nav__cart {
     margin-left: auto;
+    margin-right: 35px;
+}
+
+@media (min-width: 992px) {
+    .nav__cart {
+        margin-right: 0;
+    }
 }
 
 .nav__cart-link{

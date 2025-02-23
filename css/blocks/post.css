@@ -1,14 +1,20 @@
 .posts-wrapper{
+    margin-bottom: 35px;
     display: flex;
 
     /* Говорит контенту ПЕРЕНОСИСЬ НА ДРУГИЕ СТРОЧКИ */
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
     /* Расстояние между рядами */
     row-gap: 40px;
+    column-gap: 30px;
+}
 
-    margin-bottom: 75px;
+@media (min-width: 992px) {
+    .posts-wrapper{
+        margin-bottom: 75px;
+    }
 }
 
 .post{
@@ -17,10 +23,25 @@
     /* Выравниваем контент в посте в ряд*/
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
+    align-items: flex-start;
+    column-gap: 15px;
+}
+
+@media (min-width: 400px) {
+    .post{
+        column-gap: 30px;
+    }
 }
 
 .post__img{
-    padding-right: 40px;
+    max-width: 100px;
+}
+
+@media (min-width: 400px) {
+    .post__img{
+        max-width: 170px;
+    }
 }
 
 .post__content{

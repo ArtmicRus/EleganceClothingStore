@@ -1,13 +1,26 @@
 /* CARDS PRODUCTS */
 
 .products-wrapper{
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
     /* Говорит display: flex; какой делать отступ между рядами*/
     row-gap: 40px;
     padding-bottom: 40px;
+    column-gap: 30px;
+
+    /*Это сделано так как товар иногда остаётся один на строке, чтобы такого не было фикс вёрстки*/
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .products-wrapper{
+        max-width: 100%;
+    }
 }
 
 .product{
